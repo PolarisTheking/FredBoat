@@ -55,16 +55,6 @@ interface ITrackProvider {
     fun provideAudioTrack(): AudioTrackContext?
 
     /**
-     * Call this when the current track is skipped by the user to let the provider know about it
-     */
-    fun skipped()
-
-    /**
-     * When restoring a guild player this allows us to set a potentially currently playing track
-     */
-    fun setLastTrack(lastTrack: AudioTrackContext)
-
-    /**
      * @return amount of tracks in the queue
      */
     fun size(): Int
